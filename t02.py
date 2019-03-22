@@ -12,14 +12,14 @@ __updated__ = "2019-03-21"
 from BST_linked import BST
 from Letter import Letter
 from functions import do_comparisons, comparison_total
-# import time
+import time
 # Constants
 SEP = '------------------------------------------------------------'
 def func():
     """
     -------------------------------------------------------
     description
-    Use: 
+    Use:
     -------------------------------------------------------
     Parameters:
         name - description (type)
@@ -28,8 +28,8 @@ def func():
     ------------------------------------------------------
 
     """
-    
-# start = time.time()
+
+start = time.time()
 bst1 = BST()
 bst2 = BST()
 bst3 = BST()
@@ -72,10 +72,6 @@ print('Comparing by order: {}'.format(DATA3))
 print('Total comparisons: {:,}'.format(total3))
 print(SEP)
 print()
-# end = time.time()
-# time_total = end-start
-# print('Took {} to execute'.format(time_total))
-
-
-    
-    
+end = time.time()
+time_total = end-start
+print('Took {:.2f}s to execute'.format(time_total))
